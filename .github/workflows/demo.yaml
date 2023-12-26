@@ -4,6 +4,8 @@ jobs:
   build-app:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4  
       - name: go build
         run: |
           go build
